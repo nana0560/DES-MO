@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto and Gift Card Trading</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color:#333 ;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color:#ffffff;
+        }
+
+        section {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin-bottom: 8px;
+            color: #ffb700;
+        }
+
+        input, select {
+            padding: 8px;
+            margin-bottom: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #091010;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to RAisis Cion Market</h1>
+
+    <section id="crypto">
+        <h2 style="color: #020202;">Buy/Sell Bitcoin</h2>
+        <form action="/process_bitcoin_transaction" method="post">
+            <label for="bitcoinAmount">Bitcoin Amount:</label>
+            <input type="number" name="bitcoinAmount" id="bitcoinAmount" step="any" required>
+
+            <label for="bitcoinAddress">Bitcoin Address:</label>
+            <input type="text" name="bitcoinAddress" id="bitcoinAddress" required>
+
+            <label for="paymentMethod">Payment Method:</label>
+            <select name="paymentMethod" id="paymentMethod" required>
+                <option value="bankTransfer">Bank Transfer</option>
+                <option value="mtnMomo">MTN Mobile Money (Momo)</option>
+                <option value="creditCard">Credit Card</option>
+                <option value="crypto">Other Cryptocurrency</option>
+            </select>
+
+            <button type="submit">Buy/Sell Bitcoin</button>
+        </form>
+    </section>
+
+    <section id="giftCard">
+        <h2 style="color: #080808;">Buy/Sell Gift Card</h2>
+        <form action="/process_gift_card_transaction" method="post">
+            <label for="giftCardType">Gift Card Type:</label>
+            <select name="giftCardType" id="giftCardType" required>
+                <option value="amazon">Amazon</option>
+                <option value="itunes">iTunes</option>
+                <option value="googlePlay">Google Play</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="giftCardAmount">Gift Card Amount:</label>
+            <input type="number" name="giftCardAmount" id="giftCardAmount" step="any" required>
+
+            <label for="giftCardCode">Gift Card Code:</label>
+            <input type="text" name="giftCardCode" id="giftCardCode" required>
+
+            <label for="giftCardPaymentMethod">Payment Method:</label>
+            <select name="giftCardPaymentMethod" id="giftCardPaymentMethod" required>
+                <option value="bankTransfer">Bank Transfer</option>
+                <option value="mtnMomo">MTN Mobile Money (Momo)</option>
+                <option value="paypal">PayPal</option>
+                <option value="crypto">Other Cryptocurrency</option>
+            </select>
+
+            <button type="submit">Buy/Sell Gift Card</button>
+        </form>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+@media(max-width:1024px){
+    .navbar-light .navbar-nav .nav-link {
+        margin-top: 13px;
+    }
+}
+
+
+
+@media(max-width:991px){
+    .btn_joinnow{
+        display: none;
+    }
+    .btn_larg_join{
+        display: inherit;
+    }
+    .phone {
+        position: absolute;
+        width: 41%;
+        left: 39px;
+        bottom: 0;
+    }
+    .wallet_content {
+         width: 223px;
+    }
+
+
+}
+
+
+@media(max-width:768px){
+    .top_header {
+        display: none;
+    }
+    .hg {
+        margin-top: 10px;
+    }
+    .phone {
+        display: none;
+    }
+
+
+}
+@media(max-width: 576px){
+    .instraction_box {
+        margin-bottom: 20px;
+    }
+    .service_box {
+        margin-bottom: 30px;
+    }
+
+    .wallet_content {
+        width: 285px;
+    }
+    .counter_section p {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+    .safe_secure {
+        position: absolute;
+        left: 11%;
+        top: -26%;
+        transform: translate(11%,-26%);
+    }
+    .mobile_aps {
+        position: absolute;
+        left: 17%;
+        top: 50%;
+        transform: translate(-17%,-50%);
+    }
+    .wallet {
+        position: absolute;
+        left: 19%;
+        bottom: 0;
+        transform: translate(-18%,96%);
+    }
+    .experts_supperts {
+        position: absolute;
+        left: 81%;
+        top: -49%;
+        transform: translate(-74%,25px);
+    }
+    .instant_excenge {
+        position: absolute;
+        top: 50%;
+        left: 82%;
+        form: translate(-84%,-50%);
+    }
+    .recuring_buys {
+        position: absolute;
+        top: 80%;
+        left: 80%;
+        transform: translate(-74%,24%);
+    }
+    .chart_section {
+        margin-bottom: 60px;
+    }
+    .person {
+        width: 60%;
+        margin-bottom: 40px;
+    }
+  
+}
+@media(max-width:426px){
+
+    .safe_secure .icon,.mobile_aps .icon,.wallet .icon,.experts_supperts .icon,.instant_excenge .icon,.recuring_buys .icon {
+        width: 40px;
+        height: 40px;
+    }
+    .safe_secure .icon i,.instant_excenge .icon i,
+    .mobile_aps .icon i,.wallet .icon i,.experts_supperts .icon i,.instant_excenge .icon i,.recuring_buys .icon i{
+        font-size: 15px;
+    }
+
+    .safe_secure p, .mobile_aps p, .wallet p, .experts_supperts p, .instant_excenge p, .recuring_buy p, .recuring_buys p {
+        font-size: 10px;
+    }
+    .chart_section img {
+        width: 30%;
+    }
+    .person {
+        width: 80%;
+    }
+    .recuring_buys {
+        top: 104%;
+        left: 80%;
+        transform: translate(-74%,-0%);
+    }
+    .btn_joinnow, .btn_larg_join, .btn_contact_us {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+}
+@media(max-width:376px){
+    .btn_joinnow, .btn_larg_join, .btn_contact_us {
+        display: none;
+    }
+    .wallet_content {
+        width: 221px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bitcoin Selector</title>
+</head>
+<body>
+
+<div id="bitcoinBar" onclick="toggleBitcoinSelection()">
+    <p>Select Bitcoin</p>
+</div>
+
+<div id="bitcoinSelection" class="hidden">
+    <img src="bitcoin1.jpg" alt="Bitcoin 1" onclick="selectBitcoin('bitcoin1.jpg')">
+    <img src="bitcoin2.jpg" alt="Bitcoin 2" onclick="selectBitcoin('bitcoin2.jpg')">
+    <!-- Add more Bitcoin images as needed -->
+</div>
+
+<div id="selectedBitcoin">
+    <p>Selected Bitcoin:</p>
+    <img id="selectedBitcoinImage" alt="Selected Bitcoin">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

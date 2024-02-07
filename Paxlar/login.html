@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | RAisis Cion Market</title>
+
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+
+    #login-container {
+      text-align: center;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: orange;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    button {
+      background-color: #4285f4;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    button:hover {
+      background-color: #3470e3;
+    }
+
+    
+  
+  </style>
+</head>
+<body>
+
+
+  <div id="login-container">
+    <h2>Login </h2>
+    <p>Use your Google account to get started</p>
+    <button onclick="googleSignIn()">Sign in with Google</button>
+  </div>
+
+  <script>
+    function googleSignIn() {
+      // Replace 'YOUR_CLIENT_ID' with your Google OAuth client ID
+      const clientId = '104940535981-jr6v4s4u2l90n8m2o8vadtv7c5ivi82r.apps.googleusercontent.com';
+      const redirectUri = 'http://localhost:3000'; // Replace with your redirect URI
+
+      // Google OAuth endpoint for authentication
+      const authEndpoint = 'https://accounts.google.com/o/oauth2/auth';
+
+      // Construct the authentication URL
+      const authUrl = `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=token&scope=email`;
+
+      // Redirect the user to the Google authentication page
+      window.location.href = authUrl;
+    }
+
+    // Function to handle the authentication callback
+    function handleAuthentication() {
+      // Parse the URL fragment to extract the access token
+      const accessToken = window.location.hash.substring(1).split('&')[0].split('=')[1];
+
+      // Perform further actions with the access token, such as making API requests
+
+      // For demonstration purposes, alert the access token
+      alert('Access Token: ' + accessToken);
+    }
+
+    // Call the handleAuthentication function on page load
+    window.onload = handleAuthentication;
+  </script>
+
+</body>
+</html>
